@@ -17,18 +17,18 @@ import retrofit2.http.PUT;
 
 public interface TeamService {
 
-    @GET("/api/teams")
+    @GET("/api/equipos")
     Call<List<Equipo>> getAllTeams(
             @Header("Authorization") String Authorization
     );
 
-    @POST("api/teams")
+    @POST("api/equipos")
     Call<Equipo> createTeam(
             @Header("Authorization") String Authorization,
             @Body Equipo equipo
     );
 
-    @PUT("api/teams")
+    @PUT("api/equipos")
     Call<Equipo> updateUsers(
             @Header("Autorization") String Authorization,
             @Body Equipo equipo
